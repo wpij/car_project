@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<!-- h1 nagłówek w htmlu
+  czym numer mniejszy tym ważniejszy
+  1 najważniejszy, 2,3, itd.
+  -->
+<h1>Wysłano użytkownika:</h1>
+<!--
+    p to paragraf, podobnie jak system.out.println
+    po jego zakończeniu pojawia się nowa linia
+-->
+<p th:text="${user.getUsername()}"></p>
+<p th:text="${user.getEmail()}"></p>
+
+</body>
+</html>

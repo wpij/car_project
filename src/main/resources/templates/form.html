@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Dodawanie użytkowników</title>
+</head>
+<body>
+
+<h1>Witamy na naszej stronie</h1>
+
+<!--
+    Formularz służy do obsługi danych wprowadzonych przez użytkownika
+    <form> początek formularza
+    action co ma być wywołane jak kliknę na przycisk
+    input dane dla użytkownika do wprowadzenia
+    atrybut name nazwa zmiennej, parametr o tej nazwie wysłany na serwer
+    name="username" - oznacza, że serwer będzie znał zmienną username
+    </form> koniec formularza
+-->
+<!-- jeśli użwamy get to parametry widoczne w adresie url -->
+<form action="/add" method="get">
+    <label>Podaj nazwę użytkownika:</label>
+    <input type="text" name="username" required>
+    <br>
+    <label>Podaj email:</label>
+    <input type="email" name="email" required> <!-- requrired walidacja występowania  -->
+
+    <input type="submit" value="Dodaj">
+    <!--  Przycisk o wartości Dodaj   -->
+</form>
+
+
+
+</body>
+</html>
